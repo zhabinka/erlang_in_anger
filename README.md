@@ -1,10 +1,7 @@
-# eia
-Erlang in Anger (Russian)
+# Erlang in Anger
+
+Stuff Goes Bad: Erlang in Anger (Russian)
 
 ## Building
 
-Requires:
-- texstudio
-- texlive-xetex (xelatex)
-
-Missing: Assets from original EiA (Requested them from author)
+Use [www.overleaf.com](https://www.overleaf.com/) with XeLaTex engine compiling.
