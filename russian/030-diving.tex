@@ -134,7 +134,7 @@ rebar.config
 
 
 \begin{figure}
-  \includegraphics{app-deps-riak-cs.pdf}%
+  \includegraphics{app-deps-riak-cs.png}%
 %  \caption{Dependency graph of riak\_cs, Basho's open source cloud library. The graph ignores dependencies on common applications like kernel and stdlib. Ovals are applications, rectangles are library applications.}%
   \caption{Граф зависимостей riak\_cs, облачной библиотеки с открытым исходным кодом, написанной компанией Basho. Граф игнорирует зависимости от общих приложений, таких как kernel и stdlib. Овалами показаны приложения, прямоугольниками --- библиотечные приложения.}%
    \label{fig:app-deps}
@@ -561,7 +561,7 @@ handle_info(reconnect, S = #state{sock=undefined, opts=Opts}) ->
 Если говорить упрощённо, то большинство проектов, с которыми мне пришлось работать, могут быть изображены в виде кухонной раковины. Пользовательские и входящие данные вытекают из крана. Erlang-система является раковиной и трубами, а то, куда идёт вывод результатов (неважно, что это, база данных или внешний сервис) --- является канализацией.
 
 \begin{figure}[h!]
-  \includegraphics[max height=7cm]{sink.pdf}%
+  \includegraphics[max height=7cm]{sink.png}%
   \centering%
 %  \caption{Your system is like a sink, and the true bottleneck, at the last drain, needs to be identified before you spend all your time and money making the sink and pipes bigger.}%
 %\caption{Ваша система в виде раковины, и настоящее узкое место в последней трубе должно быть обнаружено до того, как вы потратите слишком много времени и денег увеличивая трубы и раковину.}

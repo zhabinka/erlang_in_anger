@@ -380,7 +380,7 @@ undefined
 
 
 \begin{figure}
-  \includegraphics{memory-allocs.pdf}%
+  \includegraphics{memory-allocs.png}%
 %  \caption{Erlang's Memory allocators and their hierarchy. Not shown is the special \emph{super carrier}, optionally allowing to pre-allocate (and limit) all memory available to the Erlang VM since R16B03.}%
 	\caption{Аллокаторы памяти в Erlang и их иерархия. Не показаны особые \emph{супер-носители} (\emph{super carrier}), которые позволяют заранее распределять и ограничивать всю доступную память начиная с версии R16B03.}
    \label{fig:allocators}
@@ -420,7 +420,7 @@ undefined
 Итак, глядя на нечто такое, как двоичный аллокатор, мы можем получить картинку, похожую на рисунок \ref{fig:allocation-1-normal}.
 
 \begin{figure}
-  \includegraphics{allocation-1-normal.pdf}%
+  \includegraphics{allocation-1-normal.png}%
 %  \caption{Example memory allocated in a specific sub-allocator}%
 	\caption{Пример памяти, выделенной некоторым вложенным аллокатором}
    \label{fig:allocation-1-normal}
@@ -454,7 +454,7 @@ undefined
 Каждая из этих стратегий может быть настроена индивидуально для каждого аллокатора \term{alloc\_util}\footnote{\href{http://erlang.org/doc/man/erts\_alloc.html\#M\_as}{http://erlang.org/doc/man/erts\_alloc.html\#M\_as}}.
 
 \begin{figure}
-  \includegraphics[max height=7cm]{allocation-strategy-1.pdf}%
+  \includegraphics[max height=7cm]{allocation-strategy-1.png}%
   \centering%
 %  \caption{Example memory allocated in a specific sub-allocator}%
 	\caption{Пример памяти, выделенной некоторым вложенным аллокатором}
@@ -472,7 +472,7 @@ undefined
 \emph{Address order first fit} (\term{aoff}) будет руководствоваться порядком адресов при поиске, но как только найден первый подходящий блок, \term{aoff} его использует. В случае, когда стратегии \term{aobf} и \term{bf} использовали бы зону 3 для выделения четырёх блоков на рисунке \ref{fig:allocation-strategy-1}, эта стратегия выбрала бы зону 2, поскольку её адрес меньше. На рисунке  \ref{fig:allocation-strategy-2}, если бы нам понадобилось выделить четыре блока, мы бы предпочли блок 1 блоку 3, поскольку его адрес меньше, тогда как \term{bf} выбрал бы вариант 3 или 4, а \term{aobf} выбрал бы 3.
 
 \begin{figure}
-  \includegraphics[max height=7cm]{allocation-strategy-2.pdf}%
+  \includegraphics[max height=7cm]{allocation-strategy-2.png}%
   \centering%
 %  \caption{Example memory allocated in a specific sub-allocator}%
 	\caption{Пример памяти, выделенной некоторым вложенным аллокатором}
